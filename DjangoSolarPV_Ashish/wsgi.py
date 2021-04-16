@@ -1,5 +1,5 @@
 """
-WSGI config for DjangoRESTAPIProject project.
+WSGI config for DjangoSolarPV_Ashish project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'DjangoRESTAPIProject.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'DjangoSolarPV_Ashish.settings')
 
 application = get_wsgi_application()
