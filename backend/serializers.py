@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Product, Location, Client, TestStandard, TestSequence
+from .models import Product, Location, Client, TestStandard, TestSequence, Service, PerformanceData, User, Certificate
 
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
@@ -24,4 +24,24 @@ class TestStandardSerializer(serializers.ModelSerializer):
 class TestSequenceSerializer(serializers.ModelSerializer):
     class Meta:
         model = TestSequence
+        fields = '__all__'
+
+class ServiceSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Service
+        fields = '__all__'
+
+class PerformanceDataSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = PerformanceData
+        fields = '__all__'
+
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = '__all__'
+
+class CertificateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Certificate
         fields = '__all__'
