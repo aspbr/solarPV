@@ -10,6 +10,19 @@ urlpatterns = [
     path('product-update/<int:pk>/', views.updateProduct, name='product-update'),
     path('product-delete/<int:pk>/', views.deleteProduct, name='product-delete'),
 
+    path('certificate-list/', views.showAllCertificates, name='certificate-list'),
+    path('certificate-detail/<int:pk>/', views.viewCertificate, name='certificate-detail'),
+    path('certificate-create/', views.createCertificate, name='certificate-create'),
+    path('certificate-update/<int:pk>/', views.updateCertificate, name='certificate-update'),
+    path('certificate-delete/<int:pk>/', views.deleteCertificate, name='certificate-delete'),
+
+    path('service-list/', views.showAllServices, name='service-list'),
+    path('service-detail/<int:pk>/', views.viewService, name='service-detail'),
+    path('service-create/', views.createService, name='service-create'),
+    path('service-update/<int:pk>/', views.updateService, name='service-update'),
+    path('service-delete/<int:pk>/', views.deleteService, name='service-delete'),
+
+
     path('location-list/', views.showAllLocations, name='location-list'),
     path('location-detail/<int:pk>/', views.viewLocation, name='location-detail'),
     path('location-create/', views.createLocation, name='location-create'),
