@@ -136,7 +136,7 @@ class User(models.Model):
     client = models.ForeignKey(Client, on_delete=models.CASCADE, default=1)
 
     def __str__(self):
-        return self.last_name
+        return self.first_name
 
 # Create your models here.
 class Certificate(models.Model):
